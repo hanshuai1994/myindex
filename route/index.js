@@ -20,8 +20,17 @@ var index = {
     }
 }
 
+var weather = {
+    path: '/weather/',
+    method: 'get',
+    func: (request, response) => {
+        var path = 'weather.html'
+        sendHtml(path, response)
+    }
+}
 var routes = [
     index,
+    weather,
 ]
 
 module.exports.routes = routes

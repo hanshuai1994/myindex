@@ -1,0 +1,11 @@
+footer>a:active,
+footer>a:visited {
+    color: #bbb;
+}
+
+footer {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}

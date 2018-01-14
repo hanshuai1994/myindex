@@ -1,6 +1,12 @@
-body {
+html,body {
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+}
+
+body {
     font-family: '微软雅黑', 'Rubik', sans-serif;
 }
 
@@ -37,4 +43,36 @@ footer {
     bottom: 5px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+
+    transition: 1s transform;
+    background: transparent;
+}
+
+.box>div {
+    /* background: transparent; */
+}
+.page {
+    width: 100%;
+    height: 100%;
+}
+
+.part-0 {
+    background: #77f278;
+}
+
+.part-1 {
+    background: #e149e9;
+}
+
+.part-2 {
+    background: #7b8ad6;
+}
+
+.part-3 {
+    background: #cde96e;
 }
