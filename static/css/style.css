@@ -45,6 +45,22 @@ footer {
     transform: translateX(-50%);
 }
 
+line {
+    display: inline-block;
+    position: absolute;
+    box-sizing: border-box;
+    height: 2px;
+    width: 80px;
+    background: #03A9F4;
+    bottom: 15px;
+    right: 414px;
+    transition: 1s transform;
+}
+
+.selected {
+    color: #03A9F4;;
+}
+
 .box {
     width: 100%;
     height: 100%;
@@ -56,13 +72,30 @@ footer {
 .box>div {
     /* background: transparent; */
 }
+
 .page {
     width: 100%;
     height: 100%;
 }
 
 .part-0 {
-    background: #77f278;
+
+}
+
+.slide-indicators {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 8%;
+}
+
+.slide-indi {
+    background: black;
+    display: inline-block;
+    width: 70px;
+    height: 5px;
+    margin: 20px;
+    border-radius: 5px;
 }
 
 .part-1 {
@@ -74,5 +107,6 @@ footer {
 }
 
 .part-3 {
+    position: relative;
     background: #cde96e;
 }

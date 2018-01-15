@@ -18,6 +18,24 @@ const bindEvent = function(element, eventName, callback) {
     element.addEventListener(eventName, callback)
 }
 
+const bindAll = function(selector, eventName, callback) {
+    var elements = document.querySelectorAll(selector)
+    for(var i = 0; i < elements.length; i++) {
+        var e = elements[i]
+        bindEvent(e, eventName, callback)
+    }
+}
+
+var removeClassAll = function(className) {
+    var selector = '.' + className
+    var elements = es(selector)
+    for (var i = 0; i < elements.length; i++) {
+        var e = elements[i]
+        log('classname', className, e)
+        e.classList.remove(className)
+    }
+}
+
 const ajax = function(request) {
     /*
     request 是一个 object，有如下属性
@@ -41,4 +59,19 @@ const ajax = function(request) {
     } else {
         r.send(request.data)
     }
+}
+
+const transformXPercent = (x) => {
+    var t = `transform:translateX(${x}%)`
+    return t
+}
+
+const transformXPx = (x) => {
+    var t = `transform:translateX(${x}px)`
+    return t
+}
+
+const transformYPercent = (y) => {
+    var t = `transform:translateY(${y}%)`
+    return t
 }
