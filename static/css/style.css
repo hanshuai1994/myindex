@@ -22,20 +22,22 @@ body {
   display: block
 }
 
-#main {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 a {
     text-decoration: none;
 }
 
+footer>a,
+footer>a:hover,
 footer>a:active,
 footer>a:visited {
     color: #bbb;
+}
+
+.about-me>a,
+.about-me>a:hover,
+.about-me>a:active,
+.about-me>a:visited {
+    color: #fff;
 }
 
 footer {
@@ -99,11 +101,26 @@ line {
 }
 
 .part-1 {
-    background: #e149e9;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #d2d2d2;
+}
+
+.part-1-text h2 {
+    font-family: 'Lucida Handwriting', serif;
+    font-style: italic;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.part-1-image img {
+    opacity: 0.8;
+    border-radius: 50px;
 }
 
 .part-2 {
-    background: #7b8ad6;
+    background: #c8c8c8;
 }
 
 .part-3 {

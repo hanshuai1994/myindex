@@ -90,7 +90,7 @@ var option = {
 var getWeather = function() {
     var request = {
         method: 'get',
-        url: 'https://free-api.heweather.com/v5/forecast?city=suqian&key=cc2d9724dcc340dc8a177adb382e7ea9',
+        url: 'https://free-api.heweather.com/v5/forecast?city=shanghai&key=cc2d9724dcc340dc8a177adb382e7ea9',
         data: '',
         callback: function(response) {
             response = JSON.parse(response)
@@ -126,3 +126,5 @@ var getWeather = function() {
     }
     ajax(request)
 }
+
+getWeather()

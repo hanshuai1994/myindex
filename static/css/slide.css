@@ -14,16 +14,16 @@
 }
 
 .slide-0 {
-    background-image: url("/img/slide_0.jpg");
+    background-image: url("/img/slide/slide_0.jpg");
 }
 
 .slide-1 {
-    background-image: url("/img/slide_1.jpg");
+    background-image: url("/img/slide/slide_1.jpg");
     /* left: 100%; */
 }
 
 .slide-2 {
-    background-image: url("/img/slide_2.jpg");
+    background-image: url("/img/slide/slide_2.jpg");
     /* left: 200%; */
 }
 

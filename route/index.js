@@ -21,16 +21,27 @@ var index = {
 }
 
 var weather = {
-    path: '/weather/',
+    path: '/weather',
     method: 'get',
     func: (request, response) => {
         var path = 'weather.html'
         sendHtml(path, response)
     }
 }
+
+var cv = {
+    path: '/cv',
+    method: 'get',
+    func: (request, response) => {
+        var path = 'cv.html'
+        sendHtml(path, response)
+    }
+}
+
 var routes = [
     index,
     weather,
+    cv,
 ]
 
 module.exports.routes = routes
