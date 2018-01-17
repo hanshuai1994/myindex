@@ -19,8 +19,15 @@ const transformPage = (box_page, element, condition) => {
 
 const changePage = () => {
     const box = e('.box')
-    box.addEventListener('mousewheel', function(event) {
+    var mouse = 'mousewheel'
+    if (isFirefox()) {
+        mouse = 'DOMMouseScroll'
+    }
+    box.addEventListener(mouse, function(event) {
         var condition = event.deltaY
+        if (isFirefox()) {
+            condition = event.detail * 100 / 3
+        }
         var box_page = Number(box.dataset.page)
         if (condition == 100) {
             if (box_page == 3) {

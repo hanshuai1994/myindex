@@ -75,3 +75,10 @@ const transformYPercent = (y) => {
     var t = `transform:translateY(${y}%)`
     return t
 }
+
+const isFirefox = () => {
+    if (navigator.userAgent.indexOf('Firefox') > -1) {
+        return true
+    }
+    return false
+}
