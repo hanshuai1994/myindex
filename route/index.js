@@ -38,10 +38,20 @@ var cv = {
     }
 }
 
+var music = {
+    path: '/music',
+    method: 'get',
+    func: (request, response) => {
+        var path = 'music-player.html'
+        sendHtml(path, response)
+    }
+}
+
 var routes = [
     index,
     weather,
     cv,
+    music,
 ]
 
 module.exports.routes = routes
