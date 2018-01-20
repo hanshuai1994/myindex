@@ -29,11 +29,11 @@ var weather = {
     }
 }
 
-var cv = {
-    path: '/cv',
+var resume = {
+    path: '/resume',
     method: 'get',
     func: (request, response) => {
-        var path = 'cv.html'
+        var path = 'resume.html'
         sendHtml(path, response)
     }
 }
@@ -50,7 +50,7 @@ var music = {
 var routes = [
     index,
     weather,
-    cv,
+    resume,
     music,
 ]
 
