@@ -2,8 +2,10 @@ const switchSection = (self) => {
     const slide = e('.slide')
     const index = Number(slide.dataset.index)
     const section = Number(slide.dataset.section)
+    log('index', index)
 
     if (self.classList.contains('slide-left')) {
+        log('slide-left')
         if (index == 0) {
             slide.dataset.index = section
             var n = section * 100 / (section + 1)
@@ -13,6 +15,7 @@ const switchSection = (self) => {
             var n = slide.dataset.index * 100 / (section + 1)
         }
     } else if (self.classList.contains('slide-right')) {
+        log('slide-right')
         if (index == section) {
             slide.dataset.index = 0
             var n = 0
@@ -21,7 +24,8 @@ const switchSection = (self) => {
             var n = slide.dataset.index * 100 / (section + 1)
         }
     }
-    slide.style = transformXPercent(-n)
+    switchActive(slide)
+    slide.style.transform  = transformXPercent(-n)
 }
 
 const bindSwitchSection = () => {
@@ -54,7 +58,7 @@ const nextSection = () => {
         slide.dataset.index = index + 1
         var n = slide.dataset.index * 100 / (section + 1)
     }
-    slide.style = transformXPercent(-n)
+    slide.style.transform  = transformXPercent(-n)
 
     switchActive(slide)
 }
@@ -72,7 +76,7 @@ const goSection = () => {
 
         slide.dataset.index = index
         const n = index * 100 / (section + 1)
-        slide.style = transformXPercent(-n)
+        slide.style.transform  = transformXPercent(-n)
 
         switchActive(slide)
     })

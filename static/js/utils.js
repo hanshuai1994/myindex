@@ -62,17 +62,17 @@ const ajax = function(request) {
 }
 
 const transformXPercent = (x) => {
-    var t = `transform:translateX(${x}%)`
+    var t = `translateX(${x}%)`
     return t
 }
 
 const transformXPx = (x) => {
-    var t = `transform:translateX(${x}px)`
+    var t = `translateX(${x}px)`
     return t
 }
 
 const transformYPercent = (y) => {
-    var t = `transform:translateY(${y}%)`
+    var t = `translateY(${y}%)`
     return t
 }
 

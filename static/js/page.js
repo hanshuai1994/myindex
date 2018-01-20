@@ -12,8 +12,8 @@ const transformSelected = (box_page, condition) => {
 const transformPage = (box_page, element, condition) => {
     const p = (box_page * 100) + condition
     const line = e('line')
-    line.style = transformXPx(p)
-    element.style = transformYPercent(-p)
+    line.style.transform = transformXPx(p)
+    element.style.transform  = transformYPercent(-p)
     element.dataset.page = box_page + (condition / 100)
 }
 
@@ -52,8 +52,8 @@ const goPage = (self) => {
     box.dataset.page = index
     const value = index * 100
     const line = e('line')
-    line.style = transformXPx(value)
-    box.style = transformYPercent(-value)
+    line.style.transform  = transformXPx(value)
+    box.style.transform  = transformYPercent(-value)
 }
 
 // 改变选中状态
@@ -68,7 +68,7 @@ const bindGoPage = () => {
     const nav = e('.nav')
     const list = nav.querySelectorAll('span')
     for (var i = 0; i < list.length; i++) {
-        const element = list[i]
+        var element = list[i]
         element.addEventListener('click', (event) => {
             const self = event.target
             goPage(self)
