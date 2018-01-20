@@ -3,67 +3,108 @@
     <head>
         <meta charset="utf-8">
         <title>我的个人简历</title>
-        <link rel="stylesheet" href="/css/cv.css">
+        <link rel="stylesheet" href="css/resume.css">
     </head>
     <body>
         <div class="container">
             <div class="info">
+                <p id="myweb">个人主页：<a href="http://hanshuai.me" target="_blank">hanshuai.me</a></p>
                 <h3>个人信息</h3>
-                <p>姓名：韩帅</p>
-                <p>手机：15605217252</p>
-                <p>邮箱：hanshuai1994@foxmail.com</p>
-                <p>个人主页：<a href="http://hanshuai.me">hanshuai.me</a></p>
+                <article class="info_article">
+                    <div class="line-1">
+                        <p>姓名：韩帅</p>
+                        <p>手机：15605217252</p>
+                    </div>
+                    <div class="line-2">
+                        <p>学历：本科</p>
+                        <p>邮箱：hanshuai1994@foxmail.com</p>
+                    </div>
+                </article>
             </div>
             <div class="skill">
                 <h3>前端技能</h3>
-                <h4>HTML / CSS</h4>
-                <ul>
-                    <li>熟练掌握 HTML / CSS，可实现各种复杂页面布局，懂得移动端开发</li>
-                    <li>熟练使用 HTML5 / CSS3 的新特性，如语义化标签、Flex布局等</li>
-                </ul>
-                <h4>ECMAScript(JavaScript)</h4>
-                <ul>
-                    <li>熟练掌握原生 JavaScript，可实现各种复杂的页面功能</li>
-                    <li>熟练使用 ES6 新特性，如箭头函数、class、模板表达式等</li>
-                    <li>具有符良好的编码习惯，遵守编码规则，代码具备良好的可读性与可维护性</li>
-                    <li>会利用面向对象的思想对代码进行封装和优化</li>
-                </ul>
-                <h4>DOM / BOM</h4>
-                <ul>
-                    <li>熟练掌握原生 JavaScript 的 DOM 操作，实现事件绑定、委托和其他功能</li>
-                    <li>熟练掌握原生 JavaScript 的 BOM 操作，实现与浏览器窗口的互动</li>
-                </ul>
-                <h4>jQuery / Lodash / ECharts / Remarkable / particles</h4>
-                <ul>
-                    <li>熟练掌握 jQuery 的使用，可利用 jQuery 实现大部分原生 Javascript 的功能</li>
-                    <li>熟悉 Lodash 库，可利用其对常见数据类型进行常规处理</li>
-                    <li>熟悉 ECharts / Remarkable / particles 等第三方库的使用，可在项目中实现</li>
-                </ul>
-                <h4>HTTP / AJAX / JSON / Node.js / express</h4>
-                <ul>
-                    <li>熟悉 HTTP 协议，理解数据传输过程</li>
-                    <li>熟悉 AJAX 的使用与封装，熟悉前后端数据交互</li>
-                    <li>能够利用 Node.js 与 Express 框架进行服务器端架设</li>
-                    <li>爬虫：能够使用 Node.js 配合 cheerio 和 sync-request 框架，爬取网页数据</li>
-                </ul>
-                <h4>Bootstrap / React.js / Git</h4>
-                <ul>
-                    <li>熟练掌握使用 Bootstrap 库进行响应式布局</li>
-                    <li>熟悉 React.js 的特性，可用 React.js 构建用户界面</li>
-                    <li>熟练掌握使用 Git 对程序的开发进行分布式版本控制</li>
-                </ul>
-                <h4>数据结构 / 算法</h4>
-                <ul>
-                    <li>熟悉常见的数据结构(栈、队列、链表、哈希表)的性质，时间复杂度，并能够实现这些数据结构</li>
-                </ul>
+                <article class="skill_article">
+                    <h4>HTML / CSS</h4>
+                    <ul>
+                        <li>熟练掌握 HTML / CSS，可实现各种复杂页面布局，懂得移动端开发</li>
+                        <li>熟练使用 HTML5 / CSS3 的新特性，如语义化标签、Flex布局等</li>
+                    </ul>
+                    <h4>ECMAScript(JavaScript)</h4>
+                    <ul>
+                        <li>熟练掌握原生 JavaScript，可实现各种复杂的页面功能</li>
+                        <li>熟练使用 ES6 新特性，如箭头函数、class、模板表达式等</li>
+                        <li>具有符良好的编码习惯，遵守编码规则，代码具备良好的可读性与可维护性</li>
+                        <li>会利用面向对象的思想对代码进行封装和优化</li>
+                    </ul>
+                    <h4>DOM / BOM</h4>
+                    <ul>
+                        <li>熟练掌握原生 JavaScript 的 DOM 操作，实现事件绑定、委托和其他功能</li>
+                        <li>熟练掌握原生 JavaScript 的 BOM 操作，实现与浏览器窗口的互动</li>
+                    </ul>
+                    <h4>jQuery / Lodash / ECharts / Remarkable / particles</h4>
+                    <ul>
+                        <li>熟练掌握 jQuery 的使用，可利用 jQuery 实现大部分原生 Javascript 的功能</li>
+                        <li>熟悉 Lodash 库，可利用其对常见数据类型进行常规处理</li>
+                        <li>熟悉 ECharts / Remarkable / particles 等第三方库的使用，可在项目中实现</li>
+                    </ul>
+                    <h4>HTTP / AJAX / Node.js / express</h4>
+                    <ul>
+                        <li>熟悉 HTTP 协议，理解数据传输过程</li>
+                        <li>熟悉 AJAX 的使用与封装，熟悉前后端数据交互</li>
+                        <li>能够利用 Node.js 与 Express 框架进行服务器端架设</li>
+                        <li>爬虫：能够使用 Node.js 配合 cheerio 和 sync-request 框架，爬取网页数据</li>
+                    </ul>
+                    <h4>Bootstrap / Git / React.js </h4>
+                    <ul>
+                        <li>熟练掌握使用 Bootstrap 库进行响应式布局</li>
+                        <li>熟练掌握使用 Git 进行分布式版本控制</li>
+                        <li>熟悉 React.js，可用 React.js 进行前端开发</li>
+                    </ul>
+                    <h4>数据结构 / 算法</h4>
+                    <ul>
+                        <li>熟悉常见数据结构(栈、队列、链表、哈希表)的性质、时间复杂度，并能够实现<br>这些数据结构</li>
+                    </ul>
+                </article>
             </div>
             <div class="program">
                 <h3>项目作品</h3>
-                <h4>音乐播放器</h4>
-                <h4>个人博客</h4>
-                <h4>天气预报</h4>
-                <h4>轮播图</h4>
-                <h4>待办事项</h4>
+                <article class="program_article">
+                    <h4>音乐播放器</h4>
+                    <div class="music_player">
+                        <div class="introduction">
+                            <p></p>
+                        </div>
+                        <img src="img/resume/music_player.jpg" alt="">
+                    </div>
+                    <h4>个人博客</h4>
+                    <div class="personal_blog">
+                        <div class="introduction">
+                            <p></p>
+                        </div>
+                        <img src="" alt="">
+                    </div>
+                    <h4>天气预报</h4>
+                    <div class="weather_forecast">
+                        <div class="introduction">
+                            <p></p>
+                        </div>
+                        <img src="img/resume/weather_forecast.jpg" alt="">
+                    </div>
+                    <h4>轮播图</h4>
+                    <div class="banner">
+                        <div class="introduction">
+                            <p></p>
+                        </div>
+                        <img src="" alt="">
+                    </div>
+                    <h4>待办事项</h4>
+                    <div class="todo">
+                        <div class="introduction">
+                            <p></p>
+                        </div>
+                        <img src="" alt="">
+                    </div>
+                </article>
             </div>
         </div>
     </body>
