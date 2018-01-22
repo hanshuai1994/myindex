@@ -1,13 +1,6 @@
 var log = console.log.bind(console)
 
 var ajax = function(request) {
-    /*
-    request 是一个 object，有如下属性
-        method，请求的方法，string
-        url，请求的路径，string
-        data，请求发送的数据，如果是 GET 方法则没有这个值，string
-        callback，响应回调，function
-    */
     var r = new XMLHttpRequest()
     r.open(request.method, request.url, true)
     if (request.contentType != undefined) {
@@ -144,8 +137,16 @@ var bindEvents = function() {
             content: e('#id-input-content').value,
             // mima: e('#id-input-mima').value,
         }
-        // 用这个数据调用 blogNew 来创建一篇新博客
-        blogNew(form)
+        if (!form.author) {
+            alert('作者不能为空，请输入作者')
+        } else if (!form.title) {
+            alert('标题不能为空，请输入标题')
+        } else if (!form.content) {
+            alert('内容不能为空，请输入内容')
+        } else {
+            // 用这个数据调用 blogNew 来创建一篇新博客
+            blogNew(form)
+        }
     })
 
     // 绑定发表评论功能

@@ -17,16 +17,25 @@ article>div {
     margin: 10px 0;
 }
 
-.comments {
-    border: 1px solid lightblue;
+.article-head p{
+    color: #556677;
+    margin-left: 20px;
 }
 
-.comments>div {
-    margin: 10px;
+.article-head h2 {
+    font-family: '黑体';
+}
+
+.article-content {
+    margin-left: 20px;
 }
 
 .comment {
-    border-top: 1px solid lightblue;
+    border-bottom: 1px dashed #d3d3d3;
+}
+
+.comment>p:last-child {
+    padding-left: 20px;
 }
 
 .new-comment p {
@@ -46,21 +55,17 @@ input{
     background-color: #f5f4df;
 }
 
+h2 {
+    margin: 50px 0 10px 0;
+    padding-bottom: 10px;
+    color: #000000;
+    font-weight: 500;
+    border-bottom: 1px solid #d3d3d3;
+}
+
 .comment-add {
     width: 120px;
     padding: 5px 10px;
     text-align: center;
     margin-top: 10px;
-}
-
-#particles {
-  position: absolute;
-  top: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%
-}
-
-#particles canvas {
-  display: block
 }

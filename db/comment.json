@@ -1,44 +1,16 @@
 [
   {
-    "author": "gua",
-    "content": "沙发",
+    "author": "评论者1",
+    "content": "这是一条评论~~~~~~~~~~",
     "blog_id": 1,
-    "created_time": 1513948620,
+    "created_time": 1516609255,
     "id": 1
   },
   {
-    "author": "xiao",
-    "content": "板凳",
-    "blog_id": 2,
-    "created_time": 1513948634,
+    "author": "评论者2",
+    "content": "这也是一条评论~~~~~~~~~~",
+    "blog_id": 1,
+    "created_time": 1516609371,
     "id": 2
-  },
-  {
-    "author": "gua",
-    "content": "沙发板凳",
-    "blog_id": 1,
-    "created_time": 1513948668,
-    "id": 3
-  },
-  {
-    "author": "1",
-    "content": "1",
-    "blog_id": 1,
-    "created_time": 1514209014,
-    "id": 4
-  },
-  {
-    "author": "sss",
-    "content": "qqq",
-    "blog_id": 1,
-    "created_time": 1514209214,
-    "id": 5
-  },
-  {
-    "author": "dsa",
-    "content": "dqw",
-    "blog_id": 1,
-    "created_time": 1514209245,
-    "id": 6
   }
 ]

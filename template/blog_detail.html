@@ -26,13 +26,6 @@
             }
 
             var ajax = function(request) {
-                /*
-                request 是一个 object，有如下属性
-                    method，请求的方法，string
-                    url，请求的路径，string
-                    data，请求发送的数据，如果是 GET 方法则没有这个值，string
-                    callback，响应回调，function
-                */
                 var r = new XMLHttpRequest()
                 r.open(request.method, request.url, true)
                 if (request.contentType != undefined) {
@@ -105,37 +98,42 @@
                         var time = t.toLocaleString()
                         var data = `
                             <article>
-                                <div>${b.author} ${time}</div>
-                                <h3>${b.title}</h3>
-                                <div>${b.content}</div>
-                                <div class="comments">
-                                <div class="blog-comments">
-                                    <div class="new-comment">
-                                        <h2>我要发表看法</h2>
-                                        <div>
-                                            <p><label for="comment-content">您的留言：</label></p>
-                                            <input class="comment-blog-id" type=hidden value="${id}">
-                                            <textarea id="comment-content" rows="10" cols="50"></textarea>
-                                        </div>
-                                        <div>
-                                            <p><label for="comment-author">您的大名：</label></p>
-                                            <input id="comment-author">
-                                        </div>
-                                        <input type="submit" class="comment-add">
-                                    </div>
+                                <div class="article-head">
+                                    <h2>${b.title}</h2>
+                                    <p>作者：${b.author}</p>
+                                    <p>日期：${time}</p>
                                 </div>
+                                <div class="article-content">${b.content}</div>
+                                <h2>留言</h2>
+                                <div class="comments">
+                                    <div class="blog-comments">
+                                        <div class="new-comment">
+                                            <h2>我要发表看法</h2>
+                                            <div>
+                                                <p><label for="comment-content">您的留言：</label></p>
+                                                <input class="comment-blog-id" type=hidden value="${id}">
+                                                <textarea id="comment-content" rows="10" cols="50"></textarea>
+                                            </div>
+                                            <div>
+                                                <p><label for="comment-author">您的大名：</label></p>
+                                                <input id="comment-author">
+                                            </div>
+                                            <input type="submit" class="comment-add" value="发表">
+                                        </div>
+                                    </div>
                                 </div>
                             </article>
                         `
                         blog_detail.insertAdjacentHTML('beforeend', data)
-                        var comments =e('.comments')
+                        var comments = e('.comments')
                         for (var i = 0; i < b.comments.length; i++) {
                                 var comment = `
                                     <div class="comment">
-                                        <p>${b.comments[i].author}：${b.comments[i].content}</p>
+                                        <p>${b.comments[i].author} 说：</p>
+                                        <p>${b.comments[i].content}</p>
                                     </div>
                                 `
-                            comments.insertAdjacentHTML('beforeend', comment)
+                            comments.insertAdjacentHTML('afterbegin', comment)
                         }
                         bindAdd()
                     }
@@ -175,17 +173,26 @@
                     var comments =e('.comments')
                         var comment_cell = `
                             <div class="comment">
-                                <p>${comment.author}：${comment.content}</p>
+                                <p>${comment.author} 说：</p>
+                                <p>${comment.content}</p>
                             </div>
                         `
-                    comments.insertAdjacentHTML('beforeend', comment_cell)
+                    comments.insertAdjacentHTML('afterbegin', comment_cell)
                 })
             }
 
             var bindAdd = function() {
                 var comment_add = e('.comment-add')
                 comment_add.addEventListener('click', function(event) {
-                    actionCommentAdd(event)
+                    var comment_content = e('#comment-content').value
+                    var comment_author = e('#comment-author').value
+                    if (!comment_content) {
+                        alert('留言不能为空，请输入您的留言')
+                    } else if (!comment_author) {
+                        alert('名字不能为空，请输入您的大名')
+                    } else {
+                        actionCommentAdd(event)
+                    }
                 })
             }
 

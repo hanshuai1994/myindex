@@ -7,28 +7,15 @@
         <link rel="stylesheet" href="/css/blog_index.css">
     </head>
     <body>
-        <div class="top-title">在这里，你甚至可以写点东西</div>
+        <div class="top-title">在这里，你可以一些东西</div>
         <div class="blog-new">
-            <div class="blog-new-left">
-                <label for="">
-                    博文标题
-                    <input id="id-input-title" type="text" value="">
-                </label>
-                <br>
-                <label for="">
-                    博文作者
-                    <input id="id-input-author" type="text" value="">
-                </label>
-                <br>
-                <label for="">
-                    博文内容
-                    <input id="id-input-content" type="text" value="">
-                </label>
-                <br>
-            </div>
-            <div class="blog-new-right">
-                <button id="id-button-submit">发表</button>
-            </div>
+            <label for="id-input-author">博文作者：</label>
+            <input id="id-input-author" type="text">
+            <label for="id-input-title">博文标题：</label>
+            <input id="id-input-title" type="text">
+            <label for="id-input-content">博文内容：</label>
+            <textarea id="id-input-content" name="name" rows="10" cols="50"></textarea>
+            <input type="submit" id="id-button-submit" value="发表">
         </div>
         <div class="gua-blogs"></div>
         <div id="particles">
