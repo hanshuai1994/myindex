@@ -22,6 +22,7 @@ a {
 
 .info_article div p:first-child {
     margin-left: 20px;
+    width: 150px;
 }
 
 .info_article div p:last-child {
