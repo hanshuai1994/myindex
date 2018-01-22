@@ -6,10 +6,6 @@ body {
     -webkit-print-color-adjust: exact;
 }
 
-.container {
-    margin-top: 20px;
-}
-
 a {
     color: #5dc3b1;
 }
@@ -53,28 +49,38 @@ h4 {
     display: inline-block;
     background: #5dc3b1;
     color: #fff;
-    padding: 2px 4px;
+    padding: 4px 8px;
     margin: 0 10px;
 }
 
 .program_article>div {
     display: flex;
     justify-content:space-around;
-
     height: 220px;
 }
 
-.program_article>div>img {
+img {
     width: auto;
     height: auto;
     max-width: 100%;
     max-height: 100%;
-}
-
-img {
     border-radius: 30px;
 }
 
-.introduction p {
-    margin: 5px auto;
+.banner>img {
+    border-radius: 20px;
+}
+
+.blog_img {
+    display: flex;
+}
+
+.blog_img>img:last-child {
+    margin-left: 10px;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
