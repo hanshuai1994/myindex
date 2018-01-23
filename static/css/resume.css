@@ -22,7 +22,7 @@ a {
 
 .info_article div p:first-child {
     margin-left: 20px;
-    width: 150px;
+    width: 200px;
 }
 
 .info_article div p:last-child {
@@ -54,34 +54,56 @@ h4 {
     margin: 0 10px;
 }
 
-.program_article>div {
+.music_player {
     display: flex;
     justify-content:space-around;
-    height: 220px;
 }
+
+.personal_blog,
+.weather_forecast,
+.banner {
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+}
+
 
 img {
     width: auto;
-    height: auto;
+    height: 340px;
     max-width: 100%;
     max-height: 100%;
     border-radius: 30px;
 }
 
-.banner>img {
-    border-radius: 20px;
+.banner img {
+    border-radius: 50px;
 }
 
 .blog_img {
     display: flex;
+    justify-content: space-around;
 }
 
-.blog_img>img:last-child {
-    margin-left: 10px;
+.personal_blog {
+    margin-bottom: 20px;
 }
 
 .introduction {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.introduction-text p {
+    margin: 13px auto;
+    text-align: center;
+}
+
+.program_article h4:first-child {
+    margin-top: 0;
+}
+
+.program_article h4 {
+    margin-top: 20px;
 }
