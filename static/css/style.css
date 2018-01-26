@@ -107,23 +107,35 @@ line {
     background: #d2d2d2;
 }
 
-.part-1-text h2 {
+.page h2 {
     font-family: 'Lucida Handwriting', serif;
     font-style: italic;
     font-size: 40px;
     margin-bottom: 50px;
 }
 
-.part-1-image img {
+.page img {
     opacity: 0.8;
     border-radius: 50px;
 }
 
+.page a {
+    color: #5dc3b1;
+    text-decoration: underline;
+}
+
 .part-2 {
-    background: #c8c8c8;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #c2c2c2;
+}
+
+.part-2-image img {
+    border-radius: 0;
 }
 
 .part-3 {
     position: relative;
-    background: #cde96e;
+    background: #b2b2b2;
 }
