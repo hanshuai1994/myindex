@@ -15,12 +15,15 @@
             <canvas class="particles-js-canvas-el"></canvas>
         </div>
         <div class="header" name="top">
-            <div class="about-me"><a href="resume" target="_blank">关于我</a></div>
+            <div class="header-left">
+                <div class="about-me"><a href="resume" target="_blank">关于我</a></div>
+                <div class="about-me blog"><a href="blog" target="_blank">博客</a></div>
+            </div>
             <div class="nav">
                 <span data-index="0" class="selected">首页</span>
                 <span data-index="1">天气</span>
                 <span data-index="2">音乐</span>
-                <span data-index="3">博客</span>
+                <span data-index="3">尾页</span>
                 <line></line>
             </div>
         </div>
@@ -28,13 +31,23 @@
             <div class="part-0 page">
                 <div class="slide" data-section="2" data-index="0">
                     <div class="slide-section slide-0">
-
+                        <div class="text-wrap">
+                            <h2>HELLO WORLD</h2>
+                        </div>
                     </div>
                     <div class="slide-section slide-1">
-
+                        <div class="text-wrap">
+                            <h2>About me</h2>
+                            <p>Web 前端开发工程师</p>
+                            <p>勇于探索未知</p>
+                        </div>
                     </div>
                     <div class="slide-section slide-2">
-
+                        <div class="text-wrap">
+                            <h2>种一棵树</h2>
+                            <h2>最好的时间是十年前</h2>
+                            <h2>其次是现在</h2>
+                        </div>
                     </div>
                 </div>
                 <button class="slide-button slide-left vertical-center" data-offset="-1">&lt;</button>
@@ -46,26 +59,26 @@
                 </div>
             </div>
             <div class="part-1 page">
-                <div class="part-1-text">
-                    <h2>Weather Chart</h2>
-                    <p>运用AJAX从和风天气获取数据</p>
-                    <p>运用原生JavaScript对数据加工</p>
-                    <p>运用echarts库进行数据可视化渲染</p>
-                    <p><a href="weather">组件展示页面</a></p>
-                </div>
                 <div class="part-1-image">
                     <img src="img/weather.gif" alt="">
                 </div>
+                <div class="part-1-text">
+                    <h2>Weather Chart</h2>
+                    <p>运用 AJAX 从和风天气获取数据</p>
+                    <p>运用原生 JavaScript 对数据加工</p>
+                    <p>运用 echarts 库进行数据可视化渲染</p>
+                    <p><a href="weather" target="_blank">组件展示页面</a></p>
+                </div>
             </div>
             <div class="part-2 page">
+                <div class="part-2-image">
+                    <img src="img/music.gif" alt="">
+                </div>
                 <div class="part-2-text">
                     <h2>Music Player</h2>
                     <p>使用 AJAX 调用网易云音乐的 API 获取音乐文件</p>
                     <p>使用 jQuery 库与 JavaScript 实现播放器的音乐列表、播放/暂停、<br>随机/再次/停止播放、上/下一曲、调节音量、拖动进度条等功能</p>
-                    <p><a href="music">组件展示页面</a></p>
-                </div>
-                <div class="part-2-image">
-                    <img src="img/music.gif" alt="">
+                    <p><a href="music" target="_blank">组件展示页面</a></p>
                 </div>
             </div>
             <div class="part-3 page">

@@ -23,7 +23,10 @@
     justify-content: center;
     align-items: center;
     width: 150px;
-    cursor: pointer;
+}
+
+.blog {
+    width: 60px;
 }
 
 .nav {
