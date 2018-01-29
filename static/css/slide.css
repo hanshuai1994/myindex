@@ -30,12 +30,17 @@
 .slide-button {
     width: 50px;
     height: 100px;
+    font-size: 40px;
 
     background: #000;
     opacity: 0.3;
     color: #bdbdbd;
     border: none;
     cursor: pointer;
+}
+
+.slide-button:hover {
+    background: #707070;
 }
 
 .slide-button:focus {

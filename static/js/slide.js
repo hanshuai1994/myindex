@@ -64,7 +64,7 @@ const nextSection = () => {
 }
 
 const autoPlay = () => {
-    setInterval(() => {nextSection()}, 5000)
+    setInterval(() => {nextSection()}, 10000)
 }
 
 const goSection = () => {
