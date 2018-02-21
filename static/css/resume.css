@@ -29,6 +29,10 @@ a {
     margin-left: 30px;
 }
 
+.skill_article li {
+    margin: 5px auto;
+}
+
 .container {
     position: absolute;
     left: 50%;
