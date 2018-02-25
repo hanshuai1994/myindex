@@ -58,7 +58,9 @@ h4 {
     margin: 0 10px;
 }
 
-.music_player {
+.music_player,
+.todo
+{
     display: flex;
     justify-content:space-around;
 }
@@ -82,6 +84,16 @@ img {
 
 .banner img {
     border-radius: 50px;
+}
+
+.music_player img {
+    margin-left: 20px;
+}
+
+.todo img {
+    border-radius: 0;
+    height: 450px;
+    margin-left: 20px;
 }
 
 .blog_img {
