@@ -233,6 +233,13 @@ line {
 }
 
 .part-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     background: #b2b2b2;
+}
+
+.part-3-image img {
+    border-radius: 0;
 }
