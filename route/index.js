@@ -48,6 +48,15 @@ var music = {
     }
 }
 
+var todo = {
+    path: '/todo_list',
+    method: 'get',
+    func: (request, response) => {
+        var path = 'todo_list.html'
+        sendHtml(path, response)
+    }
+}
+
 var blog = {
     path: '/blog',
     method: 'get',
@@ -81,6 +90,7 @@ var routes = [
     weather,
     resume,
     music,
+    todo,
     blog,
     blogDetail,
 ]
