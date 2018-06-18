@@ -21,33 +21,6 @@ var index = {
     }
 }
 
-var weather = {
-    path: '/weather',
-    method: 'get',
-    func: (request, response) => {
-        var path = 'weather.html'
-        sendHtml(path, response)
-    }
-}
-
-var resume = {
-    path: '/resume',
-    method: 'get',
-    func: (request, response) => {
-        var path = 'resume.html'
-        sendHtml(path, response)
-    }
-}
-
-var music = {
-    path: '/music',
-    method: 'get',
-    func: (request, response) => {
-        var path = 'music-player.html'
-        sendHtml(path, response)
-    }
-}
-
 var todo = {
     path: '/todo_list',
     method: 'get',
@@ -87,9 +60,6 @@ var blogDetail = {
 
 var routes = [
     index,
-    weather,
-    resume,
-    music,
     todo,
     blog,
     blogDetail,

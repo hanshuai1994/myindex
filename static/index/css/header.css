@@ -1,0 +1,44 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    z-index: 100;
+
+    font-size: 24px;
+    letter-spacing: 5px;
+    color: #fff;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+}
+
+.blog {
+    width: 60px;
+}
+
+.nav {
+    margin-right: 100px;
+}
+
+.nav span {
+    width: 100px;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
