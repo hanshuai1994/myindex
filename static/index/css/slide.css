@@ -14,16 +14,19 @@
 }
 
 .slide-0 {
-    background-image: url("../img/slide/slide_0.jpg");
+    /* background-image: url("../img/slide/slide_0.jpg"); */
+    background-image: url("http://wx2.sinaimg.cn/large/005AQqAggy1fsuoceosszj31f60ssaf4.jpg");
 }
 
 .slide-1 {
-    background-image: url("../img/slide/slide_1.jpg");
+    /* background-image: url("../img/slide/slide_1.jpg"); */
+    background-image: url("http://wx1.sinaimg.cn/large/005AQqAggy1fsuocjpxqlj312w0lv0x8.jpg");
     /* left: 100%; */
 }
 
 .slide-2 {
-    background-image: url("../img/slide/slide_2.jpg");
+    /* background-image: url("../img/slide/slide_2.jpg"); */
+    background-image: url("http://wx4.sinaimg.cn/large/005AQqAggy1fsuocojgvdj31kw0w0gww.jpg");
     /* left: 200%; */
 }
 
